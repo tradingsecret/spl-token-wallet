@@ -1,37 +1,43 @@
-import { clusterApiUrl } from '@solana/web3.js';
-import { MAINNET_URL, MAINNET_BACKUP_URL } from '../utils/connection';
+// import { clusterApiUrl } from '@solana/web3.js';
+// import { MAINNET_URL, MAINNET_BACKUP_URL } from '../utils/connection';
 
 export const CLUSTERS = [
   {
     name: 'mainnet-beta',
-    apiUrl: MAINNET_URL,
+    apiUrl: 'http://49.12.206.236:8899',
+    //apiUrl: MAINNET_URL,
     label: 'Mainnet Beta',
     clusterSlug: 'mainnet-beta',
   },
-  {
-    name: 'mainnet-beta-backup',
-    apiUrl: MAINNET_BACKUP_URL,
-      label: 'Mainnet Beta Backup',
-    clusterSlug: 'mainnet-beta',
-  },
-  {
-    name: 'devnet',
-    apiUrl: clusterApiUrl('devnet'),
-    label: 'Devnet',
-    clusterSlug: 'devnet',
-  },
-  {
-    name: 'testnet',
-    apiUrl: clusterApiUrl('testnet'),
-    label: 'Testnet',
-    clusterSlug: 'testnet',
-  },
-  {
-    name: 'localnet',
-    apiUrl: 'http://localhost:8899',
-    label: null,
-    clusterSlug: 'localnet',
-  }
+  /*
+{
+  name: 'mainnet-beta-backup',
+  //apiUrl: 'http://109.248.175.236:8899',
+  apiUrl: MAINNET_BACKUP_URL,
+    label: 'Mainnet Beta Backup',
+  clusterSlug: 'mainnet-beta',
+},
+{
+  name: 'devnet',
+  ///apiUrl: 'http://109.248.175.236:8899',
+  apiUrl: clusterApiUrl('devnet'),
+  label: 'Devnet',
+  clusterSlug: 'devnet',
+},
+{
+  name: 'testnet',
+  //apiUrl: 'http://109.248.175.236:8899',
+  apiUrl: clusterApiUrl('testnet'),
+  label: 'Testnet',
+  clusterSlug: 'testnet',
+},
+{
+  name: 'localnet',
+  //apiUrl: 'http://109.248.175.236:8899',
+  apiUrl: 'http://localhost:8899',
+  label: null,
+  clusterSlug: 'localnet',
+}*/
 ];
 
 export function clusterForEndpoint(endpoint) {
